@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="App21.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App21"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <!--VisualState to be triggered when window width is >=720 effective pixels.-->
+                        <AdaptiveTrigger MinWindowWidth="720"/>
+                    </VisualState.StateTriggers>
+
+                    <VisualState.Setters>
+                        <Setter Target="myImagePanel.Orientation" Value="Horizontal"/>
+                        <Setter Target="myTextbox.FontSize" Value="36"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <StackPanel x:Name="myPanel" Orientation="Vertical">
+            <Button x:Name="transitionBtn" Content="Move" HorizontalAlignment="Left" VerticalAlignment="Top" Click="transitionBtn_Click"/>
+            <TextBlock x:Name="myTextbox" Text="Someday I will be big text when I am connected to a bigger screen. " 
+                       Style="{ThemeResource BodyTextBlockStyle}"/>
+            <TextBlock Text="Please connect me to bigger screen." 
+                       Style="{ThemeResource BodyTextBlockStyle}"/>
+            <!--<TextBlock Text="This is a block of text. It is text block 3. " 
+                       Style="{ThemeResource BodyTextBlockStyle}"/>-->
+            <StackPanel x:Name="myImagePanel" Orientation="Vertical">
+                <Image Grid.Row="1" Grid.Column="0" Source="Assets/Picture1.png" Height="70" VerticalAlignment="Bottom" Margin="5,5,5,30"/>
+                <Image Grid.Row="1" Grid.Column="1" Source="Assets/Picture0.png" Height="70" VerticalAlignment="Bottom" Margin="5,5,5,30"/>
+                <Image Grid.Row="1" Grid.Column="2" Source="Assets/Picture3.png" Height="70" VerticalAlignment="Bottom" Margin="5,5,5,30"/>
+                <Image Grid.Row="1" Grid.Column="3" Source="Assets/Picture4.png" Height="70" VerticalAlignment="Bottom" Margin="5,5,5,30"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

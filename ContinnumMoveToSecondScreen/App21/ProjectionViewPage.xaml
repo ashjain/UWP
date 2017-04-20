@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="App21.ProjectionViewPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App21"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock TextWrapping="Wrap" FontSize="36" >I have moved to a different screen.</TextBlock>
+            <!--<Button FontFamily="Segoe UI Symbol" Click="SwapViews_Click">&#xe13c; Swap main and projection views</Button>
+            <Button FontFamily="Segoe UI Symbol" Click="StopProjecting_Click">&#xe2b3; Stop projecting</Button>-->
+        </StackPanel>
+    </Grid>
+</Page>
