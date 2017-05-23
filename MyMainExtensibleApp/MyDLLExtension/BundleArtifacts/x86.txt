@@ -1,0 +1,2 @@
+MainPackage=C:\Users\ashishj\documents\visual studio 2017\Projects\MyMainExtensibleApp\MyDLLExtension\bin\x86\Debug\MyDLLExtension_1.0.0.0_x86_Debug.appx
+SymbolPackage=C:\Users\ashishj\documents\visual studio 2017\Projects\MyMainExtensibleApp\MyDLLExtension\AppPackages\MyDLLExtension_1.0.0.0_Debug_Test\MyDLLExtension_1.0.0.0_x86_Debug.appxsym
